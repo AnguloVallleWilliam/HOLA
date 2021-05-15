@@ -29,7 +29,7 @@ public class SpringBootMockitoApplicationTests {
 	public void saveSapdropsTest() {
 		Sapdrop sapdrop = new Sapdrop(999, "primer partido", "Fue el dia 25 de mayo", "25/08/2019",null);
 		mockito.when(repository.save(sapdrop)).thenReturn(sapdrop);
-		assertEquals(user, service.addUser(user));
+		assertEquals(user, service.addSapdrop(sapdrop));
 	}
 
 	@Test
